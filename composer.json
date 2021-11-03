@@ -1,0 +1,31 @@
+{
+    "name": "smith/ultimate-kopokopo",
+    "description": "Laravel Wrapper Package for KopoKopo API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Smith\\UltimateKopokopo\\": "src/",
+            "Smith\\UltimateKopokopo\\Requests\\": "src/requests",
+            "Smith\\UltimateKopokopo\\Helpers\\": "src/helpers",
+            "Smith\\UltimateKopokopo\\Data\\": "src/data",
+            "Smith\\UltimateKopokopo\\Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Heinrich Smith",
+            "email": "smithheinrich254@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Smith\\UltimateKopokopo\\KopoKopoServiceProvider"
+            ]
+        }
+    }
+}
